@@ -1,0 +1,31 @@
+<!-- <button style="margin: 10px" (click)="redo()">redo</button> -->
+<!-- <button style="margin: 10px" (click)="undo()">undo</button> -->
+
+<input type="text" placeholder="enter svgxml" #SVG />
+<button style="margin: 10px" (click)="addCustom(SVG.value)">
+  load custom
+</button><br>
+ <input type="text" #LOAD value="1" />
+<button style="margin: 10px" (click)="addSvg(LOAD.value)">
+ X &nbsp;&nbsp; load
+</button><button style="margin: 10px" (click)="clearcanvas()">clear</button>
+<br />
+<!-- <button (click)="caching = !caching">caching {{ caching }}</button> -->
+<!-- <button (click)="loadPlan()">load plan</button><br> -->
+<button (click)="random()">copy to 2</button>
+<button (click)="clear2()">clear2</button>
+<!-- <button
+  (click)="stacking = !stacking; canvas.preserveObjectStacking = stacking"
+>
+  stacking {{ stacking }}
+</button> -->
+<!-- location : {{ i * 50 }} , {{ i * 50 }} -->
+
+<br />
+<div id="cc">
+<canvas id="c"></canvas>
+</div>
+<div id="dd">
+<canvas id="d" [width]="dims.width" [height]="dims.height" style="border:1px solid #000000;">
+</canvas>
+</div>

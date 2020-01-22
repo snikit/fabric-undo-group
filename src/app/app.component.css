@@ -1,0 +1,13 @@
+p {
+  font-family: Lato;
+}
+
+
+#cc {
+    display:block;
+    float: left;
+}
+#dc {
+    display:block;
+    float: right;
+}
